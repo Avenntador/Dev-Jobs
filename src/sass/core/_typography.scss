@@ -1,0 +1,29 @@
+.heading-one {
+  font-family: $font-family-bold;
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+}
+
+.heading-two {
+  font-family: $font-family-bold;
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+}
+
+.heading-three {
+  font-family: $font-family-bold;
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+}
+
+.paragraph {
+  font-family: $font-family-regular;
+  font-size: $font-size-p;
+  line-height: $line-height-p;
+}
+
+.location-label {
+  font-size: $font-size-location-label;
+  font-family: $font-family-bold;
+  line-height: $line-height-location-label;
+}

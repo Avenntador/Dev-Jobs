@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const path = require("path");
+require("dotenv").config();
 
-module.exports = nextConfig
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, "src/sass")],
+    prependData: `@import "style.scss";`,
+  },
+};

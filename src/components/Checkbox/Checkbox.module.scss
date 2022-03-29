@@ -1,0 +1,36 @@
+.checkboxWrapper {
+  display: inline-block;
+}
+
+.checkbox {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.3rem;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: $primary-color-light-violet;
+  }
+
+  &:checked {
+    background-color: $primary-color-violet;
+  }
+
+  &:not(:checked) ~ .checkIcon {
+    visibility: hidden;
+  }
+}
+
+.label {
+  font-size: $font-size-checkboxLabel;
+  font-family: $font-family-bold;
+  line-height: $line-height-checkboxLabel;
+  color: $primary-color-dark-blue;
+}
+
+.checkIcon {
+  display: inline;
+  position: relative;
+  left: -2.2rem;
+  top: 0.2rem;
+}

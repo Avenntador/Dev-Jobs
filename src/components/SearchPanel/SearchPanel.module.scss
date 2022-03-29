@@ -1,0 +1,28 @@
+.searchWrapper {
+  position: absolute;
+  left: 50%;
+  top: -14.4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border-radius: 0.6rem;
+  @include d-flex(row, inherit, center);
+  overflow: hidden;
+}
+
+.filterByTitle,
+.filterByLocation {
+  border-right: 1px solid #6e80983f;
+}
+
+.filterByTitle {
+  width: 46.3rem;
+}
+
+.filterByLocation {
+  width: 30rem;
+}
+
+.searchButton {
+  @include d-flex(row, space-around, center);
+  flex-grow: 1;
+}

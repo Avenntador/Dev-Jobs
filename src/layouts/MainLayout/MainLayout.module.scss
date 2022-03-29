@@ -1,0 +1,30 @@
+.container {
+  padding: 0 0 10rem 0;
+}
+
+.mainWrapper {
+  position: relative;
+  width: $main-layout-mainWrapper-width-default;
+  // min-height: $main-layout-mainWrapper-height;
+  margin: 14.4rem auto 0 auto;
+
+  @include respond(big-desktop) {
+    //width < 1800?
+    width: $main-layout-mainWrapper-width-big;
+  }
+
+  @include respond(tab-land) {
+    //width < 1200?
+    width: $main-layout-mainWrapper-width-tab_land;
+  }
+
+  @include respond(tab-port) {
+    //width < 1150?
+    width: $main-layout-mainWrapper-width-tab_port;
+  }
+
+  @include respond(phone) {
+    //width < 950?
+    width: $main-layout-mainWrapper-width-phone;
+  }
+}

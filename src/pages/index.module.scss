@@ -1,0 +1,46 @@
+.cardsContainer {
+  @include d-flex(row, inherit, inherit);
+  flex-wrap: wrap;
+
+  @include respond(big-desktop) {
+    //width < 2200?
+    & > :not(:nth-child(4n)) {
+      margin-right: 1rem;
+    }
+  }
+
+  @media (max-width: 137.5em) {
+    & > :not(:nth-child(3n)) {
+      margin-right: 2.8rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    //width < 1300?
+    & > :not(:nth-child(3n)) {
+      margin-right: 2.8rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    //width < 1150?
+    & > :not(:nth-child(3n)) {
+      margin-right: 1rem;
+    }
+  }
+
+  @include respond(phone) {
+    //width < 950?
+    & > :not(:nth-child(3n)) {
+      margin-right: 1rem;
+    }
+  }
+
+  & > div {
+    margin-bottom: 6.5rem;
+  }
+}
+
+.loaderBtn {
+  text-align: center;
+}

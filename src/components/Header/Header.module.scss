@@ -1,0 +1,43 @@
+.header {
+  background-image: url("/assets/desktop/bg-pattern-header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 16rem;
+  position: relative;
+  border-radius: 0px 0px 0px 10rem;
+  overflow: hidden;
+}
+
+.logoBox {
+  width: $main-layout-header-width-default;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  @include d-flex(row, space-between, inherit);
+
+  @include respond(big-desktop) {
+    //width < 1800?
+    width: $main-layout-header-width-big;
+  }
+
+  @include respond(tab-land) {
+    //width < 1300?
+    width: $main-layout-header-width-tab_land;
+  }
+
+  @include respond(tab-port) {
+    //width < 1150?
+    width: $main-layout-header-width-tab_port;
+  }
+
+  @include respond(phone) {
+    //width < 950?
+    width: $main-layout-header-width-phone;
+  }
+}
+
+.switchWrap {
+  transform: translateX(-45%);
+}

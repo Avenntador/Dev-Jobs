@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px  10px/16px = 62.5%
+
+  @include respond(big-desktop) {
+    //width < 1800?
+    font-size: 75%; // 1rem = 12rem 12/16 =  75%
+  }
+
+  @include respond(tab-land) {
+    //width < 1300?
+    font-size: 56.25%; // 1rem = 9rem    9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    //width < 1150?
+    font-size: 50%; // 1rem = 8rem    8/16 = 50%
+  }
+
+  @include respond(phone) {
+    //width < 950?
+    font-size: 43.75%; // 1rem = 7rem    7/16 =  43.75%
+  }
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

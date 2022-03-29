@@ -1,0 +1,105 @@
+{
+  "data": {
+    "light": {
+      "id": "Theme-light",
+      "name": "Light",
+      "colors": {
+        "body": "#f4f6f8",
+        "text": "#9DAEC2",
+        "buttonPrimary": {
+          "text": "#FFFFFF",
+          "background": "#5964E0",
+          "hover": "#939BF4"
+        },
+        "buttonSecondary": {
+          "text": "#5964E0",
+          "background": "#EEEFFC",
+          "hover": "#C5C9F4"
+        },
+        "searchForm": {
+          "text": "#19202D",
+          "background": "#FFFFFF"
+        },
+        "checkbox": {
+          "text": "#19202D",
+          "background": "#E7E8E9"
+        },
+        "switch": {
+          "background": "#ffffff"
+        },
+        "searchPanel": {
+          "background": "#ffffff"
+        },
+        "card": {
+          "background": "#FFFFFF",
+          "text": "#19202D",
+          "hover": "#6E8098"
+        },
+        "aboutCompany": {
+          "background": "#FFFFFF",
+          "text": "#19202D"
+        },
+        "footer": {
+          "background": "#FFFFFF",
+          "text": "#19202D"
+        },
+        "blank": {
+          "background": "#FFFFFF",
+          "text": "#6E8098",
+          "labelText": "#19202D"
+        }
+      }
+    },
+
+    "dark": {
+      "id": "Theme-dark",
+      "name": "Dark",
+      "colors": {
+        "body": "#121721",
+        "text": "#9DAEC2",
+        "buttonPrimary": {
+          "text": "#FFFFFF",
+          "background": "#5964E0",
+          "hover": "#939BF4"
+        },
+        "buttonSecondary": {
+          "text": "#FFFFFF",
+          "background": "#303642",
+          "hover": "#696E76"
+        },
+        "searchForm": {
+          "text": "#FFFFFF",
+          "background": "#19202D"
+        },
+        "checkbox": {
+          "text": "#FFFFFF",
+          "background": "#313743"
+        },
+        "switch": {
+          "background": "#19202D"
+        },
+        "searchPanel": {
+          "background": "#19202D"
+        },
+        "card": {
+          "background": "#19202D",
+          "text": "#FFFFFF",
+          "hover": "#6E8098"
+        },
+        "aboutCompany": {
+          "background": "#19202D",
+          "text": "#FFFFFF"
+        },
+        "footer": {
+          "background": "#19202D",
+          "text": "#FFFFFF"
+        },
+        "blank": {
+          "background": "#19202D",
+          "text": "#9DAEC2",
+          "labelText": "#ffffff"
+        }
+      }
+    }
+  }
+}

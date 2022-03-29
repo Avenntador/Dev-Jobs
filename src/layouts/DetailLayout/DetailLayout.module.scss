@@ -1,0 +1,26 @@
+.container,
+.mainWrapper {
+  margin: 0 auto;
+}
+
+.container {
+  min-width: $detail-layout-container-min-width;
+}
+
+.mainWrapper {
+  width: $detail-layout-mainWrapper-width;
+  // min-height: $detail-layout-mainWrapper-height;
+  @include d-flex(column, inherit, inherit);
+}
+
+.footer {
+  // margin-top: auto;
+  width: $detail-layout-footer-width;
+
+  &__content {
+    width: $detail-layout-footer-content-width;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    @include d-flex(row, space-between, inherit);
+  }
+}

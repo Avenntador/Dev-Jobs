@@ -1,0 +1,76 @@
+@import "../fonts/fonts";
+
+//======================== PRIMARY COLORS ===========================
+$primary-color-violet: #5964e0;
+$primary-color-light-violet: #939bf4;
+$primary-color-dark-blue: #19202d;
+$primary-color-midnight: #121721;
+
+//==================== SECONDARY COLORS =========================
+
+$secondary-color-white: #ffffff;
+$secondary-color-light-gray: #f4f6f8;
+$secondary-color-gray: #9daec2;
+$secondary-color-dark-gray: #6e8098;
+
+//=================== FONT SIZE ===============================
+
+$font-size-h1: 2.8rem;
+$font-size-h2: 2.4rem;
+$font-size-h3: 2rem;
+$font-size-h4: 1.4rem;
+$font-size-p: 1.6rem;
+$font-size-btn: 1.6rem;
+$font-size-search: 1.6rem;
+$font-size-checkboxLabel: 1.6rem;
+$font-size-location-label: 1.4rem;
+
+//====================== LINE HEIGHT ===========================
+
+$line-height-h1: 3.4rem;
+$line-height-h2: 2.9rem;
+$line-height-h3: 2.4rem;
+$line-height-h4: 1.8rem;
+$line-height-p: 2.6rem;
+$line-height-btn: 2rem;
+$line-height-search: 2rem;
+$line-height-checkboxLabel: 2rem;
+$line-height-location-label: 1.7rem;
+
+//================= FONT FAMILY ==========================
+
+$font-family-regular: "Kumbh-Sans-regular";
+$font-family-bold: "Kumbh-Sans-bold";
+
+//=================== SCREEN SIZE ==========================
+
+// ------------ Main Layout --------------
+
+// normal size (1200-2200)
+$main-layout-mainWrapper-width-default: 120rem;
+$main-layout-header-width-default: 120rem;
+
+// big desktop (> 2200)
+$main-layout-mainWrapper-width-big: 160rem; 
+$main-layout-header-width-big: 160rem;
+
+// tab land (< 1300)
+$main-layout-mainWrapper-width-tab_land: 115rem;
+$main-layout-header-width-tab_land: 115rem;
+
+// tab portrait (< 1150) 
+$main-layout-mainWrapper-width-tab_port: 108rem;
+$main-layout-header-width-tab_port: 108rem;
+
+// phone (< 950) 
+$main-layout-mainWrapper-width-phone: 110rem;
+$main-layout-header-width-phone: 110rem;
+
+
+
+// Detail Layout
+$detail-layout-container-min-width: 111rem;
+$detail-layout-mainWrapper-width: 73rem;
+$detail-layout-mainWrapper-height: 100vh;
+$detail-layout-footer-width: 100%;
+$detail-layout-footer-content-width: 73rem;

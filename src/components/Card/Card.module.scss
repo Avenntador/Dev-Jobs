@@ -1,0 +1,62 @@
+.card {
+  width: 38.1rem;
+  height: 22.8rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  position: relative;
+  padding: 4.9rem 3.2rem 3.2rem 3.2rem;
+
+  @include respond(big-desktop) {
+    //width < 2200
+    width: 39.2rem;
+  } 
+
+  @include respond(tab-land) {
+    //width < 1300?
+    width: 36.4rem;
+  }
+
+  @include respond(tab-port) {
+    //width < 1150?
+    width: 35.3rem;
+  }
+
+  @include respond(phone) {
+    //width < 950?
+    width: 36rem;
+  }
+
+  &__logoWrapper {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: #e99210;
+    position: absolute;
+    left: 3.2rem;
+    top: -2.5rem;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content > :not(:last-child) {
+    margin-bottom: 1.7rem;
+  }
+
+  &__date,
+  &__company {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: $font-family-regular;
+    color: #6e8098;
+  }
+
+  &__location {
+    margin-top: 4.4rem;
+    color: $primary-color-violet;
+  }
+}
