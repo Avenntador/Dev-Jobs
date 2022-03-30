@@ -26,13 +26,13 @@ const SearchPanel = () => {
   };
 
   useEffect(() => {
-    if (width < 900) {
+    if (width <= 900) {
       setPlaceholders(lessScreenPlaceholders);
     } else {
       setPlaceholders(bigScreenPlaceholders);
     }
 
-    width < 600 ? setIsMobile(true) : setIsMobile(false);
+    width <= 600 ? setIsMobile(true) : setIsMobile(false);
   }, [width]);
 
   return (
