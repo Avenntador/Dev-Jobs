@@ -5,8 +5,15 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.body};
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.font};
-    min-width: 120rem;
     min-height: 100vh;
+
+    @media (max-width: 56.25em) {
+      min-width: 76.8rem;
+    }
+
+    @media (max-width: 37.5em) {
+      min-width:  37.5rem;
+    }
   }
 
   .buttonPrimary{
