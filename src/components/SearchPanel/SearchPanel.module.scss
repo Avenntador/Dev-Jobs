@@ -7,6 +7,11 @@
   border-radius: 0.6rem;
   @include d-flex(row, inherit, center);
   overflow: hidden;
+
+  @include respond(phone) {
+    width: 32.7rem;
+    height: 8rem;
+  }
 }
 
 .filterByTitle,
@@ -16,13 +21,31 @@
 
 .filterByTitle {
   width: 46.3rem;
+
+  @include respond(tab-land) {
+    width: 22.2rem;
+  }
+
+  
 }
 
 .filterByLocation {
   width: 30rem;
+
+  @include respond(tab-land) {
+    width: 21.3rem;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .searchButton {
   @include d-flex(row, space-around, center);
   flex-grow: 1;
+  
+  @include respond(phone) {
+    display: none;
+  }
 }

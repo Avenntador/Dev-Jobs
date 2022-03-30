@@ -6,4 +6,12 @@
   font-family: $font-family-bold;
   font-size: $font-size-btn;
   line-height: $line-height-btn;
+
+  @include respond(tab-port) {
+    width: 8rem;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
 }

@@ -8,6 +8,8 @@
   // min-height: $main-layout-mainWrapper-height;
   margin: 14.4rem auto 0 auto;
 
+
+  // RESPONSIVE HUETA ============================
   @include respond(big-desktop) {
     //width < 1800?
     width: $main-layout-mainWrapper-width-big;
@@ -27,4 +29,7 @@
     //width < 600?
     width: $main-layout-mainWrapper-width-phone;
   }
+  // END RESPONSIVE HUETA ============================
+
+  
 }

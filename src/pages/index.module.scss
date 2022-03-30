@@ -6,6 +6,8 @@
     margin-right: 2.8rem;
   }
 
+  // RESPONSIVE HUETA ============================
+
   @include respond(big-desktop) {
     //width < 1800?
     & > :not(:nth-child(3n)) {
@@ -35,6 +37,7 @@
       margin-right: 0;
     }
   }
+  // END RESPONSIVE HUETA ============================
 
   & > div {
     margin-bottom: 6.5rem;

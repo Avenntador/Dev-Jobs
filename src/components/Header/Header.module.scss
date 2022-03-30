@@ -23,6 +23,7 @@
   top: 35%;
   @include d-flex(row, space-between, inherit);
 
+  // RESPONSIVE HUETA ============================
   @include respond(big-desktop) {
     //width < 1800?
     width: $main-layout-header-width-big;
@@ -42,6 +43,7 @@
     //width < 600?
     width: $main-layout-header-width-phone;
   }
+  // END RESPONSIVE HUETA ============================
 }
 
 .switchWrap {
