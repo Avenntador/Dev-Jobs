@@ -14,10 +14,13 @@ export default function Home() {
         <Card />
         <Card />
         <Card />
-     
       </div>
       <div className={style.loaderBtn}>
-        <Button type="buttonPrimary" title="Load more"/>
+        <Button
+          type="buttonPrimary"
+          title="Load more"
+          otherClassName={"mainLayoutBtn"}
+        />
       </div>
     </MainLayout>
   );

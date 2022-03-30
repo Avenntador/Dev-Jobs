@@ -8,10 +8,12 @@
   @include d-flex(row, inherit, center);
   overflow: hidden;
 
+  // RESPONSIVE HUETA ============================
   @include respond(phone) {
     width: 32.7rem;
     height: 8rem;
   }
+  // END RESPONSIVE HUETA ============================
 }
 
 .filterByTitle,
@@ -25,13 +27,12 @@
   @include respond(tab-land) {
     width: 22.2rem;
   }
-
-  
 }
 
 .filterByLocation {
   width: 30rem;
 
+  // RESPONSIVE HUETA ============================
   @include respond(tab-land) {
     width: 21.3rem;
   }
@@ -39,13 +40,16 @@
   @include respond(phone) {
     display: none;
   }
+  //END RESPONSIVE HUETA ============================
 }
 
 .searchButton {
   @include d-flex(row, space-around, center);
   flex-grow: 1;
-  
+
+  // RESPONSIVE HUETA ============================
   @include respond(phone) {
     display: none;
   }
+  //END RESPONSIVE HUETA ============================
 }

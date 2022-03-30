@@ -12,6 +12,11 @@
   }
 
   @include respond(phone) {
-    display: none;
+    width: 14.1rem;
   }
+}
+
+.mainLayoutBtn {
+  width: 14.1rem !important;
+  height: 4.8rem !important;
 }
