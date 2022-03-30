@@ -13,7 +13,7 @@
 
   @include respond(tab-land) {
     //width < 1200?
-    width: 34rem;
+    width: 37rem;
   }
 
   @include respond(tab-port) {
@@ -21,10 +21,6 @@
     width: 33.3rem;
   }
 
-  // @include respond(phone) {
-  //   //width < 600?
-  //   width: 36rem;
-  // }
 
   &__logoWrapper {
     width: 5rem;
