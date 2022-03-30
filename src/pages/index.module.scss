@@ -2,39 +2,38 @@
   @include d-flex(row, inherit, inherit);
   flex-wrap: wrap;
 
-  @include respond(big-desktop) {
-    //width < 2200?
-    & > :not(:nth-child(4n)) {
-      margin-right: 1rem;
-    }
+  & > :not(:nth-child(3n)) {
+    margin-right: 2.8rem;
   }
 
-  @media (max-width: 137.5em) {
+  @include respond(big-desktop) {
+    //width < 1800?
     & > :not(:nth-child(3n)) {
       margin-right: 2.8rem;
     }
   }
 
   @include respond(tab-land) {
-    //width < 1300?
+    //width < 1200?
     & > :not(:nth-child(3n)) {
-      margin-right: 2.8rem;
+      margin-right: 2rem;
     }
   }
 
   @include respond(tab-port) {
-    //width < 1150?
+    //width < 900?
     & > :not(:nth-child(3n)) {
-      margin-right: 1rem;
+      margin-right: 0;
     }
+    justify-content: space-between;
   }
 
-  @include respond(phone) {
-    //width < 950?
-    & > :not(:nth-child(3n)) {
-      margin-right: 1rem;
-    }
-  }
+  // @include respond(phone) {
+  //   //width < 600?
+  //   & > :not(:nth-child(3n)) {
+  //     margin-right: 1rem;
+  //   }
+  // }
 
   & > div {
     margin-bottom: 6.5rem;

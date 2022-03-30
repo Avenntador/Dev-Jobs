@@ -1,5 +1,5 @@
 .card {
-  width: 38.1rem;
+  width: 35rem;
   height: 22.8rem;
   background-color: white;
   border-radius: 0.6rem;
@@ -7,24 +7,24 @@
   padding: 4.9rem 3.2rem 3.2rem 3.2rem;
 
   @include respond(big-desktop) {
-    //width < 2200
-    width: 39.2rem;
+    //width < 1800
+    width: 38.13rem;
   } 
 
   @include respond(tab-land) {
-    //width < 1300?
-    width: 36.4rem;
+    //width < 1200?
+    width: 34rem;
   }
 
   @include respond(tab-port) {
-    //width < 1150?
-    width: 35.3rem;
+    //width < 900?
+    width: 33.3rem;
   }
 
-  @include respond(phone) {
-    //width < 950?
-    width: 36rem;
-  }
+  // @include respond(phone) {
+  //   //width < 600?
+  //   width: 36rem;
+  // }
 
   &__logoWrapper {
     width: 5rem;

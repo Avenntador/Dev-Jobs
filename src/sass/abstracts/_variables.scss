@@ -47,25 +47,25 @@ $font-family-bold: "Kumbh-Sans-bold";
 
 // ------------ Main Layout --------------
 
-// normal size (1200-2200)
-$main-layout-mainWrapper-width-default: 120rem;
-$main-layout-header-width-default: 120rem;
+// normal size (1200-1800)
+$main-layout-mainWrapper-width-default: 111rem;
+$main-layout-header-width-default: 111rem;
 
-// big desktop (> 2200)
-$main-layout-mainWrapper-width-big: 160rem; 
-$main-layout-header-width-big: 160rem;
+// big desktop (> 1800)
+$main-layout-mainWrapper-width-big: 120rem; 
+$main-layout-header-width-big: 120rem;
 
-// tab land (< 1300)
-$main-layout-mainWrapper-width-tab_land: 115rem;
-$main-layout-header-width-tab_land: 115rem;
+// tab land (< 1200)
+$main-layout-mainWrapper-width-tab_land: 106rem;
+$main-layout-header-width-tab_land: 106rem;
 
-// tab portrait (< 1150) 
-$main-layout-mainWrapper-width-tab_port: 108rem;
-$main-layout-header-width-tab_port: 108rem;
+// tab portrait (< 900) 
+$main-layout-mainWrapper-width-tab_port: 68.9rem;
+$main-layout-header-width-tab_port: 68.9rem;
 
-// phone (< 950) 
-$main-layout-mainWrapper-width-phone: 110rem;
-$main-layout-header-width-phone: 110rem;
+// phone (< 600) 
+$main-layout-mainWrapper-width-phone: 32.7rem;
+$main-layout-header-width-phone: 32.7rem;
 
 
 

@@ -1,6 +1,9 @@
 .container,
 .mainWrapper {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
@@ -14,7 +17,7 @@
 }
 
 .footer {
-  // margin-top: auto;
+  margin-top: auto;
   width: $detail-layout-footer-width;
 
   &__content {

@@ -19,12 +19,12 @@
   }
 
   @include respond(tab-port) {
-    //width < 1150?
+    //width < 900?
     width: $main-layout-mainWrapper-width-tab_port;
   }
 
   @include respond(phone) {
-    //width < 950?
+    //width < 600?
     width: $main-layout-mainWrapper-width-phone;
   }
 }

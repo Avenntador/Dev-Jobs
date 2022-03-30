@@ -1,10 +1,10 @@
 import style from "./Switch.module.scss";
 import { useState, useEffect, useContext } from "react";
 import { getFromLS } from "../../utils/localStorage";
+import { ThemeContext } from "../../themes/themeContext";
 import sunIcon from "/public/assets/desktop/icon-sun.svg";
 import moonIcon from "/public/assets/desktop/icon-moon.svg";
 import Image from "next/image";
-import { ThemeContext } from "../../themes/themeContext";
 
 const Switch = () => {
   const [active, setActive] = useState(false);
@@ -23,12 +23,14 @@ const Switch = () => {
   };
 
   return (
-    <div className={`${style.switchButton} switchButton`}>
+    <div
+      className={`${style.switchButton} switchButton`}
+      onClick={clickHandler}
+    >
       <div className={style.sunIcon}>
         <Image src={sunIcon} />
       </div>
       <div
-        onClick={clickHandler}
         className={`${style.switchButton__toggle} ${
           active ? style.active : ""
         }`}

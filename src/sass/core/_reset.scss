@@ -68,25 +68,25 @@ video {
 html {
   font-size: 62.5%; // 1rem = 10px  10px/16px = 62.5%
 
-  @include respond(big-desktop) {
-    //width < 1800?
-    font-size: 75%; // 1rem = 12rem 12/16 =  75%
-  }
+  // @include respond(big-desktop) {
+  //   //width < 1800?
+  //   font-size: 75%; // 1rem = 12rem 12/16 =  75%
+  // }
 
-  @include respond(tab-land) {
-    //width < 1300?
-    font-size: 56.25%; // 1rem = 9rem    9/16 = 56.25%
-  }
+  // @include respond(tab-land) {
+  //   //width < 1200?
+  //   font-size: 56.25%; // 1rem = 9rem    9/16 = 56.25%
+  // }
 
-  @include respond(tab-port) {
-    //width < 1150?
-    font-size: 50%; // 1rem = 8rem    8/16 = 50%
-  }
+  // @include respond(tab-port) {
+  //   //width < 900?
+  //   font-size: 50%; // 1rem = 8rem    8/16 = 50%
+  // }
 
-  @include respond(phone) {
-    //width < 950?
-    font-size: 43.75%; // 1rem = 7rem    7/16 =  43.75%
-  }
+  // @include respond(phone) {
+  //   //width < 600?
+  //   font-size: 43.75%; // 1rem = 7rem    7/16 =  43.75%
+  // }
 }
 
 footer,
