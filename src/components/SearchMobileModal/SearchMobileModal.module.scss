@@ -7,12 +7,37 @@
   background-color: rgba(0, 0, 0, 0.459);
 
   &__window {
-      width: 90%;
-      height: 50%;
-      background-color: white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    width: 90%;
+    height: 21.7rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    & > :not(:nth-child(2)) {
+      padding: 1rem;
+    }
   }
+}
+
+.checkbox {
+  padding-left: 3.5rem !important;
+}
+
+.filterTitle {
+  width: 100%;
+  height: 7.2rem;
+  overflow: hidden;
+  padding: 0 1rem 0 0rem !important;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(107, 100, 100, 0.281);
 }
