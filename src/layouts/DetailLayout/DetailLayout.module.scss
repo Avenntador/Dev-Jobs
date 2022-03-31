@@ -9,27 +9,27 @@
 .mainWrapper {
   width: $detail-layout-mainWrapper-width-default;
   @include d-flex(column, inherit, inherit);
-    // RESPONSIVE HUETA ============================
-    @include respond(big-desktop) {
-      //width < 1800?
-      width: $detail-layout-mainWrapper-width-big;
-    }
-  
-    @include respond(tab-land) {
-      //width < 1200?
-      width: $detail-layout-mainWrapper-width-tab_land;
-    }
-  
-    @include respond(tab-port) {
-      //width < 900?
-      width: $detail-layout-mainWrapper-width-tab_port;
-    }
-  
-    @include respond(phone) {
-      //width < 600?
-      width: $detail-layout-mainWrapper-width-phone;
-    }
-    // END RESPONSIVE HUETA ============================
+  // RESPONSIVE HUETA ============================
+  @include respond(big-desktop) {
+    //width < 1800?
+    width: $detail-layout-mainWrapper-width-big;
+  }
+
+  @include respond(tab-land) {
+    //width < 1200?
+    width: $detail-layout-mainWrapper-width-tab_land;
+  }
+
+  @include respond(tab-port) {
+    //width < 900?
+    width: $detail-layout-mainWrapper-width-tab_port;
+  }
+
+  @include respond(phone) {
+    //width < 600?
+    width: $detail-layout-mainWrapper-width-phone;
+  }
+  // END RESPONSIVE HUETA ============================
 }
 
 .footer {
@@ -42,21 +42,23 @@
     padding: 2.5rem 0;
     @include d-flex(row, space-between, inherit);
 
+    // RESPONSIVE HUETA ============================
+
     @include respond(big-desktop) {
       //width < 1800?
       width: $detail-layout-mainWrapper-width-big;
     }
-  
+
     @include respond(tab-land) {
       //width < 1200?
       width: $detail-layout-mainWrapper-width-tab_land;
     }
-  
+
     @include respond(tab-port) {
       //width < 900?
       width: $detail-layout-mainWrapper-width-tab_port;
     }
-  
+
     @include respond(phone) {
       //width < 600?
       width: $detail-layout-mainWrapper-width-phone;
@@ -69,4 +71,6 @@
       display: none;
     }
   }
+
+  // END RESPONSIVE HUETA ============================
 }

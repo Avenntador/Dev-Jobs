@@ -1,7 +1,7 @@
 import style from "./SearchForm.module.scss";
 import Image from "next/image";
 
-const SearchForm = ({ placeholder = "", logo }) => {
+const SearchForm = ({ logo = null, placeholder = "" }) => {
   return (
     <div className={style.searchWrapper}>
       <input
@@ -9,9 +9,11 @@ const SearchForm = ({ placeholder = "", logo }) => {
         className={`${style.searchForm} searchForm`}
         placeholder={placeholder}
       />
-      <div className={style.icon}>
-        <Image src={logo} alt="search-logo" />
-      </div>
+      {logo && (
+        <div className={style.icon}>
+          {/* <Image src={logo} alt="search-logo" /> */}
+        </div>
+      )}
     </div>
   );
 };

@@ -14,6 +14,7 @@ const MainLayout = ({ title, children }) => {
         <SearchPanel />
         {children}
       </main>
+      <div id="search-portal" />
     </div>
   );
 };

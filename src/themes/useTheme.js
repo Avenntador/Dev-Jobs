@@ -19,6 +19,10 @@ export const useTheme = () => {
     const localTheme = getFromLS("theme");
     localTheme ? setTheme(localTheme) : setTheme(light);
     setMode(localTheme ? localTheme : light);
+
+    return () => {
+      setTheme(null);
+    };
   }, []);
 
   return { theme, switchTheme };

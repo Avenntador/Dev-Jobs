@@ -15,6 +15,10 @@ const Switch = () => {
     if (localTheme) {
       localTheme.name === "Light" ? setActive(false) : setActive(true);
     }
+
+    return () => {
+      setActive(false);
+    };
   }, []);
 
   const clickHandler = () => {
