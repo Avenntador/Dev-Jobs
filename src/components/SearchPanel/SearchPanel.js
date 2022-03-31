@@ -35,6 +35,7 @@ const SearchPanel = () => {
       : setPlaceholders(bigScreenPlaceholders);
 
     width <= 600 ? setIsMobile(true) : setIsMobile(false);
+    setIsModalOpen(false);
 
     document.body.style.overflow = isScrollBlocked ? "hidden" : "";
 
