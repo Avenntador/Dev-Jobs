@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import SearchForm from "../SearchForm";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
-import searchLogo from "/public/assets/desktop/icon-search.svg";
+import locationLogo from "/public/assets/desktop/icon-location.svg";
 
 const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
   const closeHandler = (e) => {
@@ -19,12 +19,12 @@ const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
 
   return (
     <div className={style.modal} onClick={closeHandler}>
-      <div className={style.modal__window}>
+      <div className={`${style.modal__window} modal`}>
         <div className={style.filterTitle}>
-          <SearchForm logo={searchLogo} placeholder="Filter by location…" />
+          <SearchForm logo={locationLogo} placeholder="Filter by location…" />
         </div>
         <div className={style.hr} />
-        <div className={style.checkbox}>
+        <div className={`${style.checkbox} modalLabel`}>
           <Checkbox checkboxLabel={"Full Time Only"} />
         </div>
         <div>

@@ -98,5 +98,13 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.footer.text};
   }
 
+  .modal {
+    background-color: ${({ theme }) => theme.colors.modal.background};
+  }
+
+  .modalLabel {
+    color: ${({ theme }) => theme.colors.modal.text};
+  }
+
 
 `;

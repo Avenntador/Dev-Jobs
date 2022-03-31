@@ -47,6 +47,10 @@
           "background": "#FFFFFF",
           "text": "#6E8098",
           "labelText": "#19202D"
+        },
+        "modal": {
+          "background": "#FFFFFF",
+          "text": "#19202D"
         }
       }
     },
@@ -98,6 +102,10 @@
           "background": "#19202D",
           "text": "#9DAEC2",
           "labelText": "#ffffff"
+        },
+        "modal": {
+          "background": "#19202D",
+          "text": "#FFFFFF"
         }
       }
     }
