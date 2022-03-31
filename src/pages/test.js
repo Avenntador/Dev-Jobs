@@ -16,19 +16,29 @@ const Test = () => {
             <p className="heading-three aboutCompanyLabel">Scoot</p>
             <p className="paragraph">scoot.com</p>
           </div>
-          <Button type="buttonSecondary" title="Company Site" />
+          <Button
+            type="buttonSecondary"
+            title="Company Site"
+            otherClassName={"defaultBtn"}
+          />
         </div>
       </div>
 
       <div className={`${style.blank} blank`}>
-        <p className="paragraph">1w ago &#8226; Part Time</p>
         <div className={style.blank__heading}>
-          <h1 className="heading-one blankLabel">Senior Software Engineer</h1>
-          <Button type="buttonPrimary" title="Apply Now" />
+          <div>
+            <p className="paragraph">1w ago &#8226; Part Time</p>
+            <h1 className="heading-one blankLabel">Senior Software Engineer</h1>
+            <p className={`${style.blank__location} location-label`}>
+              United Kingdom
+            </p>
+          </div>
+          <Button
+            type="buttonPrimary"
+            title="Apply Now"
+            otherClassName={"mobileBtn"}
+          />
         </div>
-        <p className={`${style.blank__location} location-label`}>
-          United Kingdom
-        </p>
 
         <div className={style.blank__section}>
           <p className="paragraph">

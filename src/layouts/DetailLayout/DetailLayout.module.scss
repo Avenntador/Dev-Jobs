@@ -12,26 +12,24 @@
     // RESPONSIVE HUETA ============================
     @include respond(big-desktop) {
       //width < 1800?
-      width: $main-layout-mainWrapper-width-big;
+      width: $detail-layout-mainWrapper-width-big;
     }
   
     @include respond(tab-land) {
       //width < 1200?
-      width: $main-layout-mainWrapper-width-tab_land;
+      width: $detail-layout-mainWrapper-width-tab_land;
     }
   
     @include respond(tab-port) {
       //width < 900?
-      width: $main-layout-mainWrapper-width-tab_port;
+      width: $detail-layout-mainWrapper-width-tab_port;
     }
   
     @include respond(phone) {
       //width < 600?
-      width: $main-layout-mainWrapper-width-phone;
+      width: $detail-layout-mainWrapper-width-phone;
     }
     // END RESPONSIVE HUETA ============================
-
-
 }
 
 .footer {
@@ -62,6 +60,13 @@
     @include respond(phone) {
       //width < 600?
       width: $detail-layout-mainWrapper-width-phone;
+    }
+  }
+
+  @include respond(phone) {
+    //width < 600?
+    & > &__content > &__position {
+      display: none;
     }
   }
 }

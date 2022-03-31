@@ -42,53 +42,55 @@ $line-height-location-label: 1.7rem;
 $font-family-regular: "Kumbh-Sans-regular";
 $font-family-bold: "Kumbh-Sans-bold";
 
+
+
+
+
 //=================== SCREEN SIZE ==========================
+
+
+// ------------------HEADER-----------------------
+
+$header-width-default: 111rem;
+$header-width-big: 120rem;
+$header-width-tab_land: 78rem;
+$header-width-tab_port: 68.9rem;
+$header-width-phone: 80%;
 
 
 // ------------ Main Layout --------------
 
 // normal size (1200-1800)
 $main-layout-mainWrapper-width-default: 111rem;
-$main-layout-header-width-default: 111rem;
 
 // big desktop (> 1800)
 $main-layout-mainWrapper-width-big: 120rem; 
-$main-layout-header-width-big: 120rem;
 
 // tab land (< 1200)
 $main-layout-mainWrapper-width-tab_land: 78rem;
-$main-layout-header-width-tab_land: 78rem;
 
 // tab portrait (< 900) 
 $main-layout-mainWrapper-width-tab_port: 68.9rem;
-$main-layout-header-width-tab_port: 68.9rem;
 
 // phone (< 600) 
 $main-layout-mainWrapper-width-phone: 80%;
-$main-layout-header-width-phone: 80%;
-
 
 
 // ----------------Detail Layout-------------
 
 // normal size (1200-1800)
 $detail-layout-mainWrapper-width-default: 111rem;
-$detail-layout-header-width-default: 111rem;
 
 // big desktop (> 1800)
 $detail-layout-mainWrapper-width-big: 120rem; 
-$detail-layout-header-width-big: 120rem;
 
 // tab land (< 1200)
-$detail-layout-mainWrapper-width-tab_land: 78rem;
-$detail-layout-header-width-tab_land: 78rem;
+$detail-layout-mainWrapper-width-tab_land: 75%;
 
 // tab portrait (< 900) 
-$detail-layout-mainWrapper-width-tab_port: 68.9rem;
-$detail-layout-header-width-tab_port: 68.9rem;
+$detail-layout-mainWrapper-width-tab_port: 90%;
 
 // phone (< 600) 
-$detail-layout-mainWrapper-width-phone: 80%;
-$detail-layout-header-width-phone: 80%;
+$detail-layout-mainWrapper-width-phone: 90%;
 
 $detail-layout-footer-width: 100%;

@@ -28,6 +28,33 @@
   &__site > :first-child {
     margin-bottom: 1.1rem;
   }
+
+  @include respond(phone) {
+    height: 20.5rem;
+    flex-direction: column;
+    overflow: visible;
+
+    &__logo {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__links {
+      margin-top: 1.5rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      & > :last-child {
+        margin-top: 2.4rem;
+      }
+    }
+  }
 }
 
 .blank {
@@ -48,6 +75,7 @@
   }
 
   &__location {
+    margin-top: 0.8rem;
     color: $primary-color-violet;
   }
 
@@ -66,6 +94,17 @@
 
     & > li:not(:last-child) {
       margin-bottom: 0.8rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__heading {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > :last-child {
+        margin-top: 5rem;
+      }
     }
   }
 }

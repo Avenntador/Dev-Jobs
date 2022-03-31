@@ -19,7 +19,7 @@ export default function Home() {
         <Button
           type="buttonPrimary"
           title="Load more"
-          otherClassName={"mainLayoutBtn"}
+          otherClassName={"defaultBtn"}
         />
       </div>
     </MainLayout>

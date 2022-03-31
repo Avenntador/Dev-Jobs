@@ -21,7 +21,7 @@ const DetailLayout = ({ title, children }) => {
             </h3>
             <p className="paragraph">So Digital Inc.</p>
           </div>
-          <Button type="buttonPrimary" title="Apply Now" />
+          <Button type="buttonPrimary" title="Apply Now" otherClassName={"mobileBtn"}/>
         </div>
       </footer>
     </div>

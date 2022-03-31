@@ -16,7 +16,17 @@
   }
 }
 
-.mainLayoutBtn {
+.defaultBtn {
   width: 14.1rem !important;
   height: 4.8rem !important;
+}
+
+.mobileBtn {
+  @include respond(tab-port) {
+    width: 14.1rem;
+  }
+
+  @include respond(phone) {
+    width: 100% !important;
+  }
 }

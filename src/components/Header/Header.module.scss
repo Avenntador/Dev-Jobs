@@ -16,7 +16,7 @@
 }
 
 .logoBox {
-  width: $main-layout-header-width-default;
+  width: $header-width-default;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -26,22 +26,22 @@
   // RESPONSIVE HUETA ============================
   @include respond(big-desktop) {
     //width < 1800?
-    width: $main-layout-header-width-big;
+    width: $header-width-big;
   }
 
   @include respond(tab-land) {
     //width < 1200?
-    width: $main-layout-header-width-tab_land;
+    width: $header-width-tab_land;
   }
 
   @include respond(tab-port) {
     //width < 900?
-    width: $main-layout-header-width-tab_port;
+    width: $header-width-tab_port;
   }
 
   @include respond(phone) {
     //width < 600?
-    width: $main-layout-header-width-phone;
+    width: $header-width-phone;
   }
   // END RESPONSIVE HUETA ============================
 }
