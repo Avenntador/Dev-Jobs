@@ -11,7 +11,7 @@ const Portal = ({ children }) => {
   }, [mounted]);
 
   return mounted
-    ? createPortal(children, document.querySelector("#search-portal"))
+    ? createPortal(children, document.querySelector(".search-portal"))
     : null;
 };
 

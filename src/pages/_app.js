@@ -22,6 +22,7 @@ export default function DevJobsApp({ Component, pageProps }) {
           <GlobalStyles />
           <ThemeContext.Provider value={switchTheme}>
             <Component {...pageProps} />
+            <div className="search-portal" />
           </ThemeContext.Provider>
         </ThemeProvider>
       )}

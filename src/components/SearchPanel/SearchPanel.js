@@ -43,8 +43,15 @@ const SearchPanel = () => {
 
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
+      <Portal>{isModalOpen && <SearchMobileModal />}</Portal>
+
       {isMobile ? (
-        <SearchFormMobile setIsModalOpen={setIsModalOpen} />
+        <>
+          <SearchFormMobile
+            isModalOpen={isModalOpen}
+            setIsModalOpen={setIsModalOpen}
+          />
+        </>
       ) : (
         <>
           <div className={style.filterByTitle}>
@@ -63,7 +70,6 @@ const SearchPanel = () => {
             <Checkbox checkboxLabel={placeholders.checkboxLabel} />
             <Button type="buttonPrimary" title="Search" />
           </div>
-          <Portal>{isModalOpen && <SearchMobileModal />}</Portal>
         </>
       )}
     </div>
