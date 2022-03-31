@@ -26,19 +26,18 @@ const SearchPanel = () => {
   };
 
   useEffect(() => {
-    if (width <= 900) {
-      setPlaceholders(lessScreenPlaceholders);
-    } else {
-      setPlaceholders(bigScreenPlaceholders);
-    }
-
-    width <= 600 ? setIsMobile(true) : setIsMobile(false);
+    width <= 900
+      ? setPlaceholders(lessScreenPlaceholders)
+      : setPlaceholders(bigScreenPlaceholders);
+    width <= 600
+      ? setIsMobile(true) 
+      : setIsMobile(false);
   }, [width]);
 
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
       {isMobile ? (
-        <SearchFormMobile  />
+        <SearchFormMobile />
       ) : (
         <>
           <div className={style.filterByTitle}>

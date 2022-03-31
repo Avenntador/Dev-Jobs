@@ -69,9 +69,26 @@ $main-layout-header-width-phone: 80%;
 
 
 
-// Detail Layout
-$detail-layout-container-min-width: 111rem;
-$detail-layout-mainWrapper-width: 73rem;
-$detail-layout-mainWrapper-height: 100vh;
+// ----------------Detail Layout-------------
+
+// normal size (1200-1800)
+$detail-layout-mainWrapper-width-default: 111rem;
+$detail-layout-header-width-default: 111rem;
+
+// big desktop (> 1800)
+$detail-layout-mainWrapper-width-big: 120rem; 
+$detail-layout-header-width-big: 120rem;
+
+// tab land (< 1200)
+$detail-layout-mainWrapper-width-tab_land: 78rem;
+$detail-layout-header-width-tab_land: 78rem;
+
+// tab portrait (< 900) 
+$detail-layout-mainWrapper-width-tab_port: 68.9rem;
+$detail-layout-header-width-tab_port: 68.9rem;
+
+// phone (< 600) 
+$detail-layout-mainWrapper-width-phone: 80%;
+$detail-layout-header-width-phone: 80%;
+
 $detail-layout-footer-width: 100%;
-$detail-layout-footer-content-width: 73rem;

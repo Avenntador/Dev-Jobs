@@ -6,14 +6,32 @@
   min-height: 100vh;
 }
 
-.container {
-  min-width: $detail-layout-container-min-width;
-}
-
 .mainWrapper {
-  width: $detail-layout-mainWrapper-width;
-  // min-height: $detail-layout-mainWrapper-height;
+  width: $detail-layout-mainWrapper-width-default;
   @include d-flex(column, inherit, inherit);
+    // RESPONSIVE HUETA ============================
+    @include respond(big-desktop) {
+      //width < 1800?
+      width: $main-layout-mainWrapper-width-big;
+    }
+  
+    @include respond(tab-land) {
+      //width < 1200?
+      width: $main-layout-mainWrapper-width-tab_land;
+    }
+  
+    @include respond(tab-port) {
+      //width < 900?
+      width: $main-layout-mainWrapper-width-tab_port;
+    }
+  
+    @include respond(phone) {
+      //width < 600?
+      width: $main-layout-mainWrapper-width-phone;
+    }
+    // END RESPONSIVE HUETA ============================
+
+
 }
 
 .footer {
@@ -21,9 +39,29 @@
   width: $detail-layout-footer-width;
 
   &__content {
-    width: $detail-layout-footer-content-width;
+    width: $detail-layout-mainWrapper-width-default;
     margin: 0 auto;
     padding: 2.5rem 0;
     @include d-flex(row, space-between, inherit);
+
+    @include respond(big-desktop) {
+      //width < 1800?
+      width: $detail-layout-mainWrapper-width-big;
+    }
+  
+    @include respond(tab-land) {
+      //width < 1200?
+      width: $detail-layout-mainWrapper-width-tab_land;
+    }
+  
+    @include respond(tab-port) {
+      //width < 900?
+      width: $detail-layout-mainWrapper-width-tab_port;
+    }
+  
+    @include respond(phone) {
+      //width < 600?
+      width: $detail-layout-mainWrapper-width-phone;
+    }
   }
 }

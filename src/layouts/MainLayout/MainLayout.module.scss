@@ -7,7 +7,6 @@
   width: $main-layout-mainWrapper-width-default;
   margin: 14.4rem auto 0 auto;
 
-
   // RESPONSIVE HUETA ============================
   @include respond(big-desktop) {
     //width < 1800?
@@ -29,6 +28,4 @@
     width: $main-layout-mainWrapper-width-phone;
   }
   // END RESPONSIVE HUETA ============================
-
-  
 }
