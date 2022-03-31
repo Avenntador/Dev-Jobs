@@ -43,14 +43,13 @@ const SearchPanel = () => {
 
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
-      <Portal>{isModalOpen && <SearchMobileModal />}</Portal>
+      <Portal>
+        {isModalOpen && <SearchMobileModal setIsModalOpen={setIsModalOpen} />}
+      </Portal>
 
       {isMobile ? (
         <>
-          <SearchFormMobile
-            isModalOpen={isModalOpen}
-            setIsModalOpen={setIsModalOpen}
-          />
+          <SearchFormMobile setIsModalOpen={setIsModalOpen} />
         </>
       ) : (
         <>
