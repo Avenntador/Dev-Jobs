@@ -3,7 +3,7 @@ import filterLogo from "/public/assets/mobile/icon-filter.svg";
 import searchLogo from "/public/assets/desktop/icon-search.svg";
 import Image from "next/image";
 
-const SearchFormMobile = ({ setIsModalOpen }) => {
+const SearchFormMobile = ({ setIsScrollBlocked, setIsModalOpen }) => {
   return (
     <div className={style.searchWrapper}>
       <input
@@ -20,6 +20,7 @@ const SearchFormMobile = ({ setIsModalOpen }) => {
         className={style.icon_filter}
         onClick={() => {
           setIsModalOpen(true);
+          setIsScrollBlocked(true);
         }}
       >
         <Image src={filterLogo} alt="search-logo" />

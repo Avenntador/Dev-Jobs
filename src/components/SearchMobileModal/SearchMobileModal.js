@@ -1,12 +1,20 @@
 import style from "./SearchMobileModal.module.scss";
+import { useState, useEffect } from "react";
 import SearchForm from "../SearchForm";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
 import searchLogo from "/public/assets/desktop/icon-search.svg";
 
-const SearchMobileModal = ({ setIsModalOpen }) => {
+const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
   const closeHandler = (e) => {
-    if (e.target.classList.contains(style.modal)) setIsModalOpen(false);
+    if (e.target.classList.contains(style.modal)) {
+      setIsModalOpen(false);
+      setIsScrollBlocked(false);
+    }
+
+    return () => {
+      setIsScrollBlocked(false);
+    };
   };
 
   return (

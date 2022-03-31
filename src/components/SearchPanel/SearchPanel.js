@@ -15,6 +15,7 @@ const SearchPanel = () => {
   const [placeholders, setPlaceholders] = useState({});
   const [isMobile, setIsMobile] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isScrollBlocked, setIsScrollBlocked] = useState(false);
 
   const bigScreenPlaceholders = {
     titlePlaceholder: "Filter by title, companies, expertise…",
@@ -34,22 +35,31 @@ const SearchPanel = () => {
       : setPlaceholders(bigScreenPlaceholders);
 
     width <= 600 ? setIsMobile(true) : setIsMobile(false);
+
+    document.body.style.overflow = isScrollBlocked ? "hidden" : "";
+
     return () => {
       setIsMobile(false);
-      setPlaceholders({});
-      setIsModalOpen(false);
     };
-  }, [width]);
+  }, [width, isScrollBlocked]);
 
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
       <Portal>
-        {isModalOpen && <SearchMobileModal setIsModalOpen={setIsModalOpen} />}
+        {isModalOpen && (
+          <SearchMobileModal
+            setIsScrollBlocked={setIsScrollBlocked}
+            setIsModalOpen={setIsModalOpen}
+          />
+        )}
       </Portal>
 
       {isMobile ? (
         <>
-          <SearchFormMobile setIsModalOpen={setIsModalOpen} />
+          <SearchFormMobile
+            setIsScrollBlocked={setIsScrollBlocked}
+            setIsModalOpen={setIsModalOpen}
+          />
         </>
       ) : (
         <>
