@@ -1,7 +1,4 @@
 import style from "./SearchFormMobile.module.scss";
-import filterLogo from "/public/assets/mobile/icon-filter.svg";
-import searchLogo from "/public/assets/desktop/icon-search.svg";
-import Image from "next/image";
 
 const SearchFormMobile = ({ setIsScrollBlocked, setIsModalOpen }) => {
   return (
@@ -13,7 +10,7 @@ const SearchFormMobile = ({ setIsScrollBlocked, setIsModalOpen }) => {
       />
       <div className={style.icon_wrapper}>
         <div className={style.icon_search}>
-          <Image src={searchLogo} alt="search-logo" />
+          <img src="/assets/desktop/icon-search.svg" alt="" />
         </div>
       </div>
       <div
@@ -23,7 +20,7 @@ const SearchFormMobile = ({ setIsScrollBlocked, setIsModalOpen }) => {
           setIsScrollBlocked(true);
         }}
       >
-        <Image src={filterLogo} alt="search-logo" />
+        <img src="/assets/mobile/icon-filter.svg" alt="" />
       </div>
     </div>
   );

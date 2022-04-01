@@ -4,8 +4,6 @@ import SearchForm from "../SearchForm";
 import SearchFormMobile from "../SearchFormMobile";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
-import searchIcon from "/public/assets/desktop/icon-search.svg";
-import locationIcon from "/public/assets/desktop/icon-location.svg";
 import useWindowDimensions from "../../utils/useWindowDimensions";
 import Portal from "../../utils/Portal";
 import SearchMobileModal from "../SearchMobileModal";
@@ -36,14 +34,12 @@ const SearchPanel = () => {
 
     width <= 600 ? setIsMobile(true) : setIsMobile(false);
     setIsModalOpen(false);
-
   }, [width]);
 
   useEffect(() => {
     document.body.style.overflow = isScrollBlocked ? "hidden" : "";
   }, [isScrollBlocked]);
 
-  console.log("rerendered");
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
       <Portal>
@@ -67,13 +63,13 @@ const SearchPanel = () => {
           <div className={style.filterByTitle}>
             <SearchForm
               placeholder={placeholders.titlePlaceholder}
-              logo={searchIcon}
+              logo="/assets/desktop/icon-search.svg"
             />
           </div>
           <div className={style.filterByLocation}>
             <SearchForm
               placeholder={placeholders.locationPlaceholder}
-              logo={locationIcon}
+              logo="/assets/desktop/icon-location.svg"
             />
           </div>
           <div className={style.searchButton}>

@@ -1,5 +1,4 @@
 import style from "./SearchForm.module.scss";
-import Image from "next/image";
 
 const SearchForm = ({ logo = null, placeholder = "" }) => {
   return (
@@ -11,8 +10,7 @@ const SearchForm = ({ logo = null, placeholder = "" }) => {
       />
       {logo && (
         <div className={style.icon}>
-          
-          <Image src={logo} alt="search-logo" />
+          <img src={`${logo}`} alt="" />
         </div>
       )}
     </div>

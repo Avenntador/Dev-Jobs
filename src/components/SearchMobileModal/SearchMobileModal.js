@@ -2,7 +2,6 @@ import style from "./SearchMobileModal.module.scss";
 import SearchForm from "../SearchForm";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
-import locationLogo from "/public/assets/desktop/icon-location.svg";
 
 const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
   const closeHandler = (e) => {
@@ -16,7 +15,10 @@ const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
     <div className={style.modal} onClick={closeHandler}>
       <div className={`${style.modal__window} modal`}>
         <div className={style.filterTitle}>
-          <SearchForm logo={locationLogo} placeholder="Filter by location…" />
+          <SearchForm
+            logo="/assets/desktop/icon-location.svg"
+            placeholder="Filter by location…"
+          />
         </div>
         <div className={style.hr} />
         <div className={`${style.checkbox} modalLabel`}>
