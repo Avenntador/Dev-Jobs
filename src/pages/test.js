@@ -5,6 +5,7 @@ import companyLogo from "/public/assets/logos/scoot.svg";
 import Image from "next/image";
 
 const Test = () => {
+  
   return (
     <DetailLayout title="Test">
       <div className={`${style.aboutCompany} aboutCompany`}>
