@@ -11,6 +11,7 @@ const SearchForm = ({ logo = null, placeholder = "" }) => {
       />
       {logo && (
         <div className={style.icon}>
+          
           <Image src={logo} alt="search-logo" />
         </div>
       )}

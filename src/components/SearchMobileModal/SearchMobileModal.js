@@ -1,5 +1,4 @@
 import style from "./SearchMobileModal.module.scss";
-import { useState, useEffect } from "react";
 import SearchForm from "../SearchForm";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
@@ -11,10 +10,6 @@ const SearchMobileModal = ({ setIsScrollBlocked, setIsModalOpen }) => {
       setIsModalOpen(false);
       setIsScrollBlocked(false);
     }
-
-    return () => {
-      setIsScrollBlocked(false);
-    };
   };
 
   return (

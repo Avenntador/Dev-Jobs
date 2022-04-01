@@ -37,13 +37,13 @@ const SearchPanel = () => {
     width <= 600 ? setIsMobile(true) : setIsMobile(false);
     setIsModalOpen(false);
 
+  }, [width]);
+
+  useEffect(() => {
     document.body.style.overflow = isScrollBlocked ? "hidden" : "";
+  }, [isScrollBlocked]);
 
-    return () => {
-      setIsMobile(false);
-    };
-  }, [width, isScrollBlocked]);
-
+  console.log("rerendered");
   return (
     <div className={`${style.searchWrapper} searchWrapper`}>
       <Portal>
